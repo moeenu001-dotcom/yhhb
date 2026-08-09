@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>প্রাইভেসি পলিসি | G-ZONE ESPORTS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+  --bg-dark:#080e1a; --bg-card:#111827; --bg-card-2:#0d1520;
+  --primary:#06b6d4; --primary-glow:rgba(6,182,212,.35);
+  --secondary:#6366f1; --accent:#ec4899;
+  --warning:#f59e0b; --danger:#ef4444; --success:#10b981;
+  --glass-border:rgba(255,255,255,.07); --glass-border-strong:rgba(255,255,255,.12);
+  --text-main:#f1f5f9; --text-muted:#7c8fa6;
+  --font-bn:'Hind Siliguri',sans-serif; --font-gaming:'Rajdhani',sans-serif; --font-main:'Outfit',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{
+  background-color:var(--bg-dark);
+  background-image:radial-gradient(ellipse at 15% 15%,rgba(6,182,212,.06) 0%,transparent 50%),
+                    radial-gradient(ellipse at 85% 85%,rgba(99,102,241,.06) 0%,transparent 50%);
+  background-attachment:fixed;
+  color:var(--text-main); font-family:var(--font-bn); min-height:100vh; padding-bottom:40px;
+}
+::-webkit-scrollbar{width:3px} ::-webkit-scrollbar-thumb{background:var(--primary);border-radius:4px}
+
+header{
+  background:rgba(8,14,26,.92); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  padding:0 16px; display:flex; align-items:center; gap:14px; position:sticky; top:0; z-index:100;
+  height:62px; border-bottom:1px solid var(--glass-border); box-shadow:0 8px 24px rgba(0,0,0,.3);
+}
+.back-btn{
+  width:36px; height:36px; border-radius:10px; background:rgba(255,255,255,.05); border:1px solid var(--glass-border);
+  display:flex; align-items:center; justify-content:center; color:var(--text-main); cursor:pointer; flex-shrink:0;
+}
+.header-title{font-family:var(--font-gaming); font-size:1.15rem; font-weight:700; letter-spacing:.5px; color:#fff}
+.header-title span{color:var(--primary)}
+
+.hero{padding:28px 20px 6px; text-align:center}
+.hero i{font-size:2.1rem; color:var(--primary); filter:drop-shadow(0 0 14px var(--primary-glow)); margin-bottom:10px}
+.hero h1{font-family:var(--font-gaming); font-size:1.55rem; font-weight:800; color:#fff; letter-spacing:.5px}
+.hero p{color:var(--text-muted); font-size:.8rem; margin-top:8px}
+.hero .updated{
+  display:inline-flex; align-items:center; gap:6px; margin-top:14px; padding:6px 14px; border-radius:50px;
+  background:rgba(6,182,212,.08); border:1px solid rgba(6,182,212,.25); color:var(--primary); font-size:.75rem; font-weight:700;
+}
+
+/* quick jump chips */
+.toc-scroll{display:flex; gap:8px; overflow-x:auto; padding:18px 20px 4px; scrollbar-width:none}
+.toc-scroll::-webkit-scrollbar{display:none}
+.toc-chip{
+  flex:0 0 auto; padding:8px 16px; border-radius:50px; font-size:.78rem; font-weight:700; color:var(--text-muted);
+  background:rgba(255,255,255,.03); border:1px solid var(--glass-border-strong); text-decoration:none; white-space:nowrap; transition:.2s;
+}
+.toc-chip:active, .toc-chip:hover{background:linear-gradient(135deg,var(--primary),var(--secondary)); color:#fff; border-color:transparent}
+
+.policy-wrap{padding:10px 16px 0}
+.p-card{
+  background:var(--bg-card); border:1px solid var(--glass-border-strong); border-radius:18px; margin-bottom:14px;
+  padding:20px; scroll-margin-top:75px;
+}
+.p-card-head{display:flex; align-items:center; gap:12px; margin-bottom:12px}
+.p-icon{
+  width:38px; height:38px; border-radius:10px; background:rgba(6,182,212,.1); border:1px solid rgba(6,182,212,.25);
+  display:flex; align-items:center; justify-content:center; color:var(--primary); font-size:1rem; flex-shrink:0;
+}
+.p-card h2{font-family:var(--font-gaming); font-size:1.1rem; font-weight:700; color:#fff; letter-spacing:.3px}
+.p-card p{color:var(--text-muted); font-size:.87rem; line-height:1.75; margin-bottom:10px}
+.p-card p:last-child{margin-bottom:0}
+.p-card b{color:var(--text-main)}
+.p-card ul{list-style:none; display:flex; flex-direction:column; gap:8px; margin:6px 0 12px}
+.p-card ul li{
+  display:flex; align-items:flex-start; gap:10px; color:var(--text-muted); font-size:.85rem; line-height:1.6;
+  background:rgba(255,255,255,.02); border:1px solid var(--glass-border); border-radius:10px; padding:10px 12px;
+}
+.p-card ul li i{color:var(--primary); margin-top:3px; flex-shrink:0; font-size:.8rem}
+.p-card ul li b{color:var(--text-main); font-weight:700}
+
+.tag-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:4px}
+.tag{
+  font-size:.72rem; font-weight:700; padding:5px 11px; border-radius:50px; background:rgba(99,102,241,.1);
+  border:1px solid rgba(99,102,241,.25); color:#a5b4fc;
+}
+.tag.warn{background:rgba(245,158,11,.1); border-color:rgba(245,158,11,.25); color:var(--warning)}
+.tag.danger{background:rgba(239,68,68,.1); border-color:rgba(239,68,68,.25); color:var(--danger)}
+.tag.ok{background:rgba(16,185,129,.1); border-color:rgba(16,185,129,.25); color:var(--success)}
+
+.section-header{
+  display:flex; align-items:center; gap:8px; margin:22px 20px 10px; font-size:.82rem; font-weight:800;
+  color:var(--text-muted); letter-spacing:.8px; text-transform:uppercase;
+}
+.section-header i{color:var(--primary)}
+
+.contact-box{margin:0 16px; background:rgba(255,255,255,.03); border:1px solid var(--glass-border); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:10px}
+.contact-row{display:flex; align-items:center; justify-content:space-between; gap:12px; background:rgba(255,255,255,.04); border:1px solid var(--glass-border); border-radius:12px; padding:12px 16px}
+.contact-row .contact-label{display:flex; align-items:center; gap:10px; color:#fff; font-size:.9rem; font-weight:600}
+.contact-row .contact-label i{width:22px; text-align:center; font-size:1.1rem; color:var(--primary)}
+.contact-row .contact-btn{background:rgba(6,182,212,.12); border:1px solid rgba(6,182,212,.3); color:var(--primary); padding:6px 16px; border-radius:8px; font-size:.8rem; font-weight:700; text-decoration:none; flex-shrink:0}
+.contact-empty, .contact-loading{text-align:center; color:var(--text-muted); font-size:.82rem; padding:10px}
+
+footer{text-align:center; padding:30px 20px 10px; color:var(--text-muted); font-size:.75rem; line-height:1.7}
+footer span{color:var(--primary); font-weight:700}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="back-btn" onclick="history.back()"><i class="fas fa-arrow-left"></i></div>
+  <div class="header-title">G-<span>ZONE</span> প্রাইভেসি পলিসি</div>
+</header>
+
+<div class="hero">
+  <i class="fas fa-shield-halved"></i>
+  <h1>আপনার তথ্যের নিরাপত্তা</h1>
+  <p>এই পলিসিতে বলা আছে G-ZONE ESPORTS কী তথ্য সংগ্রহ করে, কেন করে এবং কিভাবে সুরক্ষিত রাখে।</p>
+  <div class="updated"><i class="fas fa-clock-rotate-left"></i> সর্বশেষ আপডেটঃ ২১ জুলাই, ২০২৬</div>
+</div>
+
+<div class="toc-scroll">
+  <a class="toc-chip" href="#collect">তথ্য সংগ্রহ</a>
+  <a class="toc-chip" href="#use">ব্যবহার</a>
+  <a class="toc-chip" href="#payment">পেমেন্ট</a>
+  <a class="toc-chip" href="#security">নিরাপত্তা</a>
+  <a class="toc-chip" href="#thirdparty">থার্ড-পার্টি</a>
+  <a class="toc-chip" href="#rights">আপনার অধিকার</a>
+  <a class="toc-chip" href="#kids">বয়সসীমা</a>
+</div>
+
+<div class="policy-wrap">
+
+  <div class="p-card" id="intro">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-file-shield"></i></div><h2>ভূমিকা</h2></div>
+    <p><b>G-ZONE ESPORTS</b> ("আমরা", "আমাদের") একটি Free Fire টুর্নামেন্ট ও ই-স্পোর্টস প্ল্যাটফর্ম। এই অ্যাপ ব্যবহার করে আপনি নিচের শর্তাবলীতে সম্মত হচ্ছেন। আমরা আপনার ব্যক্তিগত তথ্য শুধুমাত্র সেবা প্রদান, একাউন্ট নিরাপত্তা ও প্রতারণা প্রতিরোধের জন্য সংগ্রহ ও ব্যবহার করি — বিক্রি করি না।</p>
+  </div>
+
+  <div class="p-card" id="collect">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-database"></i></div><h2>যেসব তথ্য সংগ্রহ করি</h2></div>
+    <p>অ্যাপ ব্যবহারের সময় নিচের তথ্যগুলো সংগ্রহ করা হয়ঃ</p>
+    <ul>
+      <li><i class="fas fa-user"></i><span><b>একাউন্ট তথ্যঃ</b> ইমেইল, পাসওয়ার্ড (এনক্রিপ্টেড), প্রোফাইল ছবি</span></li>
+      <li><i class="fas fa-gamepad"></i><span><b>গেম তথ্যঃ</b> আপনার Free Fire UID ও ইন-গেম নাম</span></li>
+      <li><i class="fas fa-wallet"></i><span><b>লেনদেন তথ্যঃ</b> ডিপোজিট, উইথড্র, ট্রান্সফার ও পুরস্কারের হিস্টোরি এবং সংশ্লিষ্ট পেমেন্ট মেথড/নাম্বার</span></li>
+      <li><i class="fas fa-mobile-screen"></i><span><b>ডিভাইস ও নিরাপত্তা তথ্যঃ</b> ডিভাইস আইডি, ব্রাউজার ফিঙ্গারপ্রিন্ট ও আইপি অ্যাড্রেস — মাল্টি-একাউন্ট ও প্রতারণা শনাক্তে ব্যবহৃত</span></li>
+      <li><i class="fas fa-bell"></i><span><b>নোটিফিকেশন টোকেনঃ</b> পুশ নোটিফিকেশন পাঠানোর জন্য ডিভাইস টোকেন</span></li>
+      <li><i class="fas fa-clock"></i><span><b>ব্যবহারের তথ্যঃ</b> লগইন সময়, অংশগ্রহণকৃত ম্যাচ, রেফারেল কার্যক্রম</span></li>
+    </ul>
+    <div class="tag-row">
+      <span class="tag ok">পাসওয়ার্ড কখনো প্লেইন-টেক্সটে সংরক্ষণ হয় না</span>
+      <span class="tag warn">ডিভাইস আইডি লোকালি সংরক্ষিত হয়</span>
+    </div>
+  </div>
+
+  <div class="p-card" id="use">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-gears"></i></div><h2>তথ্য কেন ব্যবহার করি</h2></div>
+    <ul>
+      <li><i class="fas fa-check"></i><span>একাউন্ট তৈরি, লগইন ও প্রোফাইল পরিচালনা করতে</span></li>
+      <li><i class="fas fa-check"></i><span>টুর্নামেন্ট রেজিস্ট্রেশন, রুম ক্রেডেনশিয়াল প্রদান ও পুরস্কার বিতরণ করতে</span></li>
+      <li><i class="fas fa-check"></i><span>ডিপোজিট/উইথড্র রিকোয়েস্ট যাচাই ও প্রসেস করতে</span></li>
+      <li><i class="fas fa-check"></i><span>একই ব্যক্তির একাধিক একাউন্ট বা প্রতারণামূলক কার্যক্রম শনাক্ত করতে</span></li>
+      <li><i class="fas fa-check"></i><span>গুরুত্বপূর্ণ আপডেট, ব্রডকাস্ট ও পুশ নোটিফিকেশন পাঠাতে</span></li>
+      <li><i class="fas fa-check"></i><span>লিডারবোর্ড ও রেফারেল র‍্যাংকিং প্রদর্শন করতে</span></li>
+    </ul>
+  </div>
+
+  <div class="p-card" id="payment">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-money-bill-transfer"></i></div><h2>পেমেন্ট ও আর্থিক তথ্য</h2></div>
+    <p>ডিপোজিট ও উইথড্র প্রক্রিয়ায় আমরা আপনার পেমেন্ট মেথড সংক্রান্ত তথ্য (যেমন মোবাইল ব্যাংকিং নাম্বার) গ্রহণ করি শুধুমাত্র লেনদেন যাচাই ও সম্পন্ন করার জন্য। এই তথ্য বিজ্ঞাপন বা মার্কেটিং কাজে ব্যবহার করা হয় না। সকল ওয়ালেট লেনদেন যাচাইয়ের মাধ্যমে প্রসেস করা হয়, তাই ভুল তথ্য দিলে বা পলিসি লঙ্ঘন হলে রিকোয়েস্ট বিলম্বিত বা বাতিল হতে পারে।</p>
+  </div>
+
+  <div class="p-card" id="security">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-lock"></i></div><h2>ডাটা সুরক্ষা</h2></div>
+    <p>আপনার তথ্য এনক্রিপ্টেড সংযোগ (HTTPS) এর মাধ্যমে সার্ভারে পাঠানো হয় এবং যাচাইকৃত ব্যাকএন্ড ডাটাবেজে সংরক্ষিত হয়। লগইন সেশন টোকেন-ভিত্তিক যাচাইকরণ ব্যবহার করে, এবং প্রতিটি সংবেদনশীল রিকোয়েস্ট (ব্যালেন্স পরিবর্তন, উইথড্র ইত্যাদি) প্রমাণীকরণ সাপেক্ষে প্রসেস হয়।</p>
+    <p>তারপরও, কোনো অনলাইন সিস্টেম শতভাগ ঝুঁকিমুক্ত নয়। নিজের পাসওয়ার্ড কারো সাথে শেয়ার করবেন না এবং সন্দেহজনক কার্যকলাপ দেখলে সাথে সাথে আমাদের জানান।</p>
+  </div>
+
+  <div class="p-card" id="thirdparty">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-diagram-project"></i></div><h2>থার্ড-পার্টি সেবা</h2></div>
+    <p>সেবা পরিচালনার জন্য আমরা নির্ভরযোগ্য থার্ড-পার্টি প্রোভাইডার ব্যবহার করি, যারা প্রয়োজন অনুযায়ী সীমিত তথ্য প্রক্রিয়া করে থাকেঃ</p>
+    <ul>
+      <li><i class="fas fa-fire"></i><span><b>Firebase (Google):</b> একাউন্ট লগইন/অথেন্টিকেশন ও পুশ নোটিফিকেশন পরিচালনা করে</span></li>
+      <li><i class="fas fa-server"></i><span><b>ডাটাবেজ প্রোভাইডার:</b> ব্যবহারকারীর প্রোফাইল, টুর্নামেন্ট ও লেনদেন তথ্য সংরক্ষণ করে</span></li>
+      <li><i class="fas fa-share-nodes"></i><span><b>যোগাযোগ মাধ্যম (Facebook, WhatsApp, Telegram):</b> সাপোর্টে যোগাযোগ করলে সেই প্ল্যাটফর্মের নিজস্ব প্রাইভেসি নীতি প্রযোজ্য হয়</span></li>
+    </ul>
+    <p>আমরা এই প্রোভাইডারদের সাথে শুধু প্রয়োজনীয় তথ্য শেয়ার করি এবং কোনো তৃতীয় পক্ষের কাছে বিজ্ঞাপনের উদ্দেশ্যে ডাটা বিক্রি করি না।</p>
+  </div>
+
+  <div class="p-card" id="rights">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-user-shield"></i></div><h2>আপনার অধিকার</h2></div>
+    <ul>
+      <li><i class="fas fa-eye"></i><span>প্রোফাইল সেকশন থেকে আপনার সংরক্ষিত তথ্য দেখা ও আপডেট করার অধিকার</span></li>
+      <li><i class="fas fa-trash"></i><span>একাউন্ট মুছে ফেলার অনুরোধ করার অধিকার (সাপোর্টের মাধ্যমে)</span></li>
+      <li><i class="fas fa-bell-slash"></i><span>ডিভাইস সেটিংস থেকে পুশ নোটিফিকেশন বন্ধ করার অধিকার</span></li>
+      <li><i class="fas fa-circle-question"></i><span>আপনার তথ্য কিভাবে ব্যবহৃত হচ্ছে তা জানতে চাওয়ার অধিকার</span></li>
+    </ul>
+    <p>একাউন্ট মুছে ফেলার অনুরোধ করলে, চলমান আর্থিক লেনদেন ও প্রতারণা-প্রতিরোধ সংক্রান্ত রেকর্ড আইনি প্রয়োজনে কিছু সময় সংরক্ষিত থাকতে পারে।</p>
+  </div>
+
+  <div class="p-card" id="kids">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-child-reaching"></i></div><h2>বয়সসীমা</h2></div>
+    <p>এই প্ল্যাটফর্মে আর্থিক লেনদেন সংশ্লিষ্ট থাকায় এটি শুধুমাত্র প্রাপ্তবয়স্কদের (স্থানীয় আইন অনুযায়ী নির্ধারিত বয়সসীমার) জন্য উদ্দিষ্ট। ন্যূনতম বয়সসীমার নিচে কেউ ইচ্ছাকৃত বা অনিচ্ছাকৃতভাবে তথ্য প্রদান করলে, তা জানামাত্র সংশ্লিষ্ট একাউন্ট ও তথ্য মুছে ফেলা হবে।</p>
+  </div>
+
+  <div class="p-card" id="changes">
+    <div class="p-card-head"><div class="p-icon"><i class="fas fa-arrows-rotate"></i></div><h2>নীতিমালার পরিবর্তন</h2></div>
+    <p>প্রয়োজন অনুযায়ী এই প্রাইভেসি পলিসি হালনাগাদ করা হতে পারে। উল্লেখযোগ্য পরিবর্তন হলে অ্যাপের নোটিফিকেশন/ব্রডকাস্ট এর মাধ্যমে জানানো হবে। এই পেইজের উপরে "সর্বশেষ আপডেট" তারিখ দেখে সবসময় সর্বশেষ সংস্করণ যাচাই করুন।</p>
+  </div>
+
+</div>
+
+<div class="section-header"><i class="fas fa-headset"></i> প্রাইভেসি সংক্রান্ত প্রশ্ন থাকলে যোগাযোগ করুন</div>
+<div class="contact-box" id="contact-list">
+  <div class="contact-loading">লোড হচ্ছে...</div>
+</div>
+
+<footer>এই পলিসি ব্যবহার করে আপনি <span>G-ZONE ESPORTS</span> এর তথ্য সংগ্রহ ও ব্যবহারের নিয়মে সম্মত হচ্ছেন।</footer>
+
+<script>
+const PROXY_WORKER_URL = "https://smmcf1.moeenu321.workers.dev";
+
+const CONTACT_META = {
+  facebook:         { icon: "fab fa-facebook",  label: "Facebook",               action: "চ্যাট করুন" },
+  whatsapp:         { icon: "fab fa-whatsapp",  label: "WhatsApp",               action: "চ্যাট করুন" },
+  telegram:         { icon: "fab fa-telegram",  label: "Telegram",               action: "চ্যাট করুন" },
+  telegram_channel: { icon: "fas fa-users",     label: "Telegram Channel/Group", action: "জয়েন করুন" }
+};
+
+async function loadContacts() {
+  const listEl = document.getElementById('contact-list');
+  try {
+    const res = await fetch(`${PROXY_WORKER_URL}/contacts`);
+    const contacts = await res.json();
+
+    const rows = Object.keys(CONTACT_META)
+      .filter(key => contacts[key])
+      .map(key => {
+        const meta = CONTACT_META[key];
+        return `
+        <div class="contact-row">
+          <div class="contact-label"><i class="${meta.icon}"></i> ${meta.label}</div>
+          <a class="contact-btn" href="${contacts[key]}" target="_blank" rel="noopener">${meta.action}</a>
+        </div>`;
+      }).join('');
+
+    listEl.innerHTML = rows || `<div class="contact-empty">এখনো কোনো যোগাযোগ মাধ্যম যোগ করা হয়নি</div>`;
+  } catch (e) {
+    listEl.innerHTML = `<div class="contact-empty">লোড করা যায়নি, আবার চেষ্টা করুন</div>`;
+  }
+}
+loadContacts();
+</script>
+</body>
+</html>
